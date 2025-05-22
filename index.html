@@ -4,49 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coti Informática</title>
+    <meta name="descrition" content="Jardim das Acácias">
+    <title>Jardim das Acácias</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+<!--SLIDE DA PAGINA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <!-- Ligação entre HTML e CSS -->
-    <link rel="stylesheet" href="style.css">    
+    <script>
+          $(document).ready(function(){
+        $(".slider").bxSlider({                       
+            auto: true,            
+            speed : 2000,
+            pause: 5000
+        });
+      });      
+    </script>
+<!-- TERMINO DO SLIDE -->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <div class="header">
-        <img src="https://avatars.githubusercontent.com/u/121516696?v=4" alt="Logotipo">
-        
-        <div class="menu"> 
-            <a href="index.html">Sobre</a>
-            <a href="habilidades.html">Habilidades</a>
-            <a href="experiencias.html">Experiências</a>
-        </div>    
-    </div>
+    <header class="header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="logotipo">
+            </div>
+
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="menu">
+              
+                <p id="pesquisa">
+                    Digite o NOME p/ pesquisar                  
+                </p>
+                <input list="nomes">
+                <datalist id="nomes">
+                    <option value="MARIA MAGDALENA DE ALMEIRA LIMA"></option>
+                    <option value="ZARIO FERREIRA LIMA"></option>
+                    <option value="RENATO FERREIRA LIMA"></option>
+                    <option value="MARIA DA CONCEICAO SILVA"></option>
+                    <option value="ULISSES CAMPOS FERREIRA"></option>
+                </datalist>
+
+                <button class="btn">Pesquisar</button>                    
     
-    <div class="content">
-        <!-- comentário em HTML -->
-        <h1>João da Silva</h1> 
-        <h2>Desenvolvedor Front-End</h2>
+            </nav>
+
+        </div>
+    </header>
+    <div class="container2">
+       <div class="slider" id="id-ini">
+       
+            <section class="hero-section bg-1">
+                <div class="container">
+                    <h1>Paz e Beleza em um só lugar !</h1>                
+                </div>                
+            </section>
+
+            <section class="hero-section bg-2">
+                <div class="container">
+                    <h1>O meio ambiente é parte fundamental !</h1>                
+                </div>
+            </section>
+
+            <section class="hero-section bg-3">
+                <div class="container">
+                    <h1>Nossa Sede com todo Conforto !</h1>                
+                </div>
+            </section>
+
+            <section class="hero-section bg-4">
+                <div class="container">
+                    <h1>Amplo parque com toda segurança !</h1>                
+                </div>
+            </section>
+            <section class="hero-section bg-5">
+                <div class="container">
+                    <h1>Cemitério parque Jardim das Acácias !</h1>                
+                </div>
+            </section>
         
-        <p>
-            Olá! Sou um estudante dedicado e entusiasmado na área de Front-End, buscando aprimorar minhas habilidades em desenvolvimento web e criar interfaces incríveis. Atualmente, estou cursando Sistemas de Informação e estou animado para ingressar no mundo profissional como desenvolvedor Front-End.        
-        </p>
+       </div>
+    </div> 
+    
+    <footer class="footer">
+        <div class="container">
 
-        <p>
-            Minha paixão por transformar ideias em experiências digitais interativas me motiva a explorar constantemente as últimas tendências e tecnologias do setor. Tenho conhecimento em <strong>HTML, CSS e JavaScript</strong> e estou empolgado em <b>aprender</b> e trabalhar com frameworks populares, como <strong>React e Angular</strong>.
-        </p>
+            <div class="footer-text">
+                <span>Cemitério Parque Jardim das Acácias...</span>
+            </div>
 
-        <p>
-            Estou aberto a oportunidades de estágio ou projetos para aperfeiçoar meu conhecimento e contribuir com equipes colaborativas. Se você está em busca de um entusiasta de Front-End comprometido e pronto para enfrentar desafios, adoraria conectar-me com você e explorar novas possibilidades juntos!
-        </p>
-    </div>    
+            <div class="social">
+                <a href="#"><img src="img/whatsapp.svg" alt=""></a>
+                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                <a href="#"><img src="img/twitter.svg" alt=""></a>
+            </div>
 
-    <div class="footer">
-        <a href="https://www.cotiinformatica.com.br/" target="_blank">Desenvolvido por Coti Informática</a>
-    </div>
+        </div>
+    </footer>
+  
+      
+    <script src="js/script.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+           loop:true,
+           autoplay: {
+                 delay: 2500,
+                 
+                 disableOnInteraction: false,
+                 pauseOnMouseEnter:true
+                 
+            },
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+        },
+       
+    });
+
+
+ </script>
 </body>
 </html>
