@@ -72,11 +72,9 @@ p{
     align-items: center; /*alinhamento vertical*/
 }
 
-
 .bx-wrapper{
    box-shadow: none;
 }
-
 
 .btn {
     background-color: DodgerBlue;
@@ -116,14 +114,16 @@ p{
 .hero-section{       
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: calc(100vh - 300px);/* tem que colocar espaco no - */
-    height: 500px;
+    height: calc(100vh - 300px);/* tem que colocar espaco no - */
+
     opacity: 0.7;
     text-align: center;
     display: flex;
     align-items: center;  
     border-radius: 30px;   
 }
+
+
 
 .hero-section h1{
     color: #c5e700;
@@ -193,6 +193,15 @@ p{
     .hero-section h1{
          font-size: 36px;  
     }
+    
+    .social{
+        display : none;
+    }
+    
+    .hero-section{       
+        height: calc(100vh - 400px);/* tem que colocar espaco no - */
+    }
+ 
 }     
 
 /* *************************************************************************** */
@@ -240,5 +249,5 @@ p{
 
     .text{
         margin-right: 65%;
-    }
+    }  
 }   
