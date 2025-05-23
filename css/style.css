@@ -21,20 +21,8 @@ h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
-h2{
-    font-size: 40px;
-    line-height: 100%;
-    color: var(--title);
-}
-
-h3{
-    color: var(--brand);
-    font-size: 24px;
-}
-
-
-.text-brand{
-    color: var(--brand);
+p{
+    margin: 0;
 }
 
 .header{
@@ -54,6 +42,7 @@ h3{
 
 .container{
     width: 100%;
+    height: 100%;
     max-width: 1164px; /*1140+24 do padding = 1164 */
     padding-left: 12px;
     padding-right: 12px;
@@ -81,8 +70,8 @@ h3{
     display: flex;
     justify-content: space-between; /*alinhamento horizontal*/
     align-items: center; /*alinhamento vertical*/
-    flex-direction: row;
 }
+
 
 .bx-wrapper{
    box-shadow: none;
@@ -97,6 +86,7 @@ h3{
     font-size: 16px;
     cursor: pointer;
     margin: 0;
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -123,9 +113,11 @@ h3{
     background-image: url(../img/fundo5.jpg);
 }
 
-.hero-section{   
+.hero-section{       
+    background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 300px);/* tem que colocar espaco no - */
+    /*height: calc(100vh - 300px);/* tem que colocar espaco no - */
+    height: 500px;
     opacity: 0.7;
     text-align: center;
     display: flex;
@@ -143,6 +135,9 @@ h3{
     padding: 20px 0;
     margin-top: 10px;
     color: #ffffff;
+    position: absolute;
+    bottom:0%;
+    width: 100%;
 }
 
 .footer .container{
@@ -157,67 +152,62 @@ h3{
 }
 
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
     
-    .container{
-        flex-direction: row;
-        gap: 10px;         
+    .bg-1{
+        background-image: url(../img/fundo11.jpg);
     }
 
-    .btn{
-        margin-top: 10px;       
+    .bg-2{
+        background-image: url(../img/fundo22.jpg);
     }
 
-    .container2{   
-        padding-left: 50px;
-        padding-right: 50px;
-        box-sizing: border-box; /* faz com que o padding nao ultrapasse os 100% fique dentro dos 100% pra dentro e nao pra fora */   
+    .bg-3{
+        background-image: url(../img/fundo33.jpg);
     }
+
+    .bg-4{
+        background-image: url(../img/fundo44.jpg);
+    }
+
+    .bg-5{
+        background-image: url(../img/fundo55.jpg);
+    }
+
     .hero-section h1{
-        font-size: 36px;  
+        font-size: 46px;  
     }
 
-    .hero-section{   
-        background-size: cover;
-        height: calc(100vh - 300px);/* tem que colocar espaco no - */
-    }
-    
 }
 
-@media (max-width: 760px){
+@media (max-width: 784px){
+    
+    .header .container{
+        flex-direction: column;     
+    }
 
-    .menu p{
-       display: none;
-     }
+    .header .menu{
+        margin-top: 20px;
+    }
+
+    .hero-section h1{
+         font-size: 36px;  
+    }
 }     
 
 /* *************************************************************************** */
 @media (max-width: 708px){
-
-    /*.menu{        
-        transform: translateX(-100%);
-        position: absolute;          
-        left: 0%;              
-        flex-direction: row;        
-        transition: 0.2s;   
-        padding-right: 10px;                 
-    }*/
-
+ 
     .menu input{
         font-size: 12px;       
     }
 
     .menu .btn{       
-        width: 30%;
-        border-radius: 0%;                  
+        width: 30%;         
+        border-radius: 10px;               
     }
     
-    .menu-open{
-        transform: translateX(0);           
-    }    
-
-    
-    .btn {
+    .btn {  
         padding: 6px 6px;
         font-size: 12px;
         width: 30px;
@@ -225,46 +215,30 @@ h3{
         margin-top: 3px; 
         margin-right: 10px;       
     }
-
-   /* .bar{
-        width: 40px;
-        height: 3px;
-        background-color: var(--brand);
-        margin-bottom: 3px;
-        transition: 0.5s;
-    }*/
-
-    .btn-menu{
-        cursor: pointer;   
-        margin-bottom: 50px;
-    }
-
-    .x .bar:first-child{
-        transform: rotate(45deg) translate(3px,0);
-    }
-
-    .x .bar:nth-child(2){
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-
-    .x .bar:last-child{
-        transform: rotate(-45deg) translate(8px,-5px);        
-    }
-
+ 
     .footer .container{
         flex-direction: column;
         row-gap: 20px;
     }
+
     .footer-text{
         text-align: center;
     }
 }
 
-@media (max-width: 552px){
+
+@media (max-width: 520px){
 
     .menu{
         flex-direction: column;
         align-items: end;         
+    }
+
+    .hero-section h1{     
+        font-size: 26px;  
+    }
+
+    .text{
+        margin-right: 65%;
     }
 }   
