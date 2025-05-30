@@ -21,7 +21,7 @@
         $(".slider").bxSlider({                       
             auto: true,            
             speed : 2000,
-            pause: 5000
+            pause: 4000
         });
       });      
     </script>
@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<body id="inicial">
 
     <header class="header">
         <div class="container">
@@ -45,17 +45,17 @@
                 <div class="text">
                      <p id="pesquisa">Pesquisar</p>
                 </div>
+                
+                <form id="formulario">                    
+                    <input list="listaPessoas" id="pessoas" name="pessoas"
+                     onkeydown="abrirPagina(event)">
+                </form>
+                
+                <datalist id="listaPessoas">
+                  <!-- As opções serão preenchidas pelo JavaScript -->
+                </datalist>             
 
-                <input list="nomes">
-                <datalist id="nomes">
-                    <option value="MARIA MAGDALENA DE ALMEIRA LIMA"></option>
-                    <option value="ZARIO FERREIRA LIMA"></option>
-                    <option value="RENATO FERREIRA LIMA"></option>
-                    <option value="MARIA DA CONCEICAO SILVA"></option>
-                    <option value="ULISSES CAMPOS FERREIRA"></option>
-                </datalist>
-
-                <button class="btn">Pesquisar</button>                    
+                <button class="btn"  id="myButton">Pesquisar</button>                    
     
             </nav>
 
@@ -140,6 +140,6 @@
     });
 
 
- </script>
+    </script>
 </body>
 </html>

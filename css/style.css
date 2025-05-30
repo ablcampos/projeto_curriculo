@@ -13,17 +13,9 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-img{
-    display: block;
-}
+h1, h2, h3, h4, h5, h6{ margin: 0;}
 
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-}
-
-p{
-    margin: 0;
-}
+p{ margin: 0;}
 
 .header{
     width: 100%;
@@ -52,7 +44,6 @@ p{
     flex-direction: row;
 }
 
-
 .menu {
     display: flex;
     align-items: center;
@@ -72,9 +63,7 @@ p{
     align-items: center; /*alinhamento vertical*/
 }
 
-.bx-wrapper{
-   box-shadow: none;
-}
+.bx-wrapper{box-shadow: none;}
 
 .btn {
     background-color: DodgerBlue;
@@ -87,29 +76,17 @@ p{
     border-radius: 10px;
 }
 
-.btn:hover {
-    background-color: RoyalBlue;
-}
+.btn:hover { background-color: RoyalBlue;}
 
-.bg-1{
-    background-image: url(../img/fundo1.jpg);
-}
+.bg-1{ background-image: url(../img/fundo1.jpg);}
 
-.bg-2{
-    background-image: url(../img/fundo2.jpg);
-}
+.bg-2{ background-image: url(../img/fundo2.jpg);}
 
-.bg-3{
-    background-image: url(../img/fundo3.jpg);
-}
+.bg-3{ background-image: url(../img/fundo3.jpg);}
 
-.bg-4{
-    background-image: url(../img/fundo4.jpg);
-}
+.bg-4{ background-image: url(../img/fundo4.jpg);}
 
-.bg-5{
-    background-image: url(../img/fundo5.jpg);
-}
+.bg-5{ background-image: url(../img/fundo5.jpg);}
 
 .hero-section{       
     background-repeat: no-repeat;
@@ -122,8 +99,6 @@ p{
     align-items: center;  
     border-radius: 30px;   
 }
-
-
 
 .hero-section h1{
     color: #c5e700;
@@ -151,28 +126,18 @@ p{
     column-gap: 20px;
 }
 
-
+/* *************************************************************************** */
 @media (max-width: 1000px){
     
-    .bg-1{
-        background-image: url(../img/fundo11.jpg);
-    }
+    .bg-1{background-image: url(../img/fundo11.jpg); }
 
-    .bg-2{
-        background-image: url(../img/fundo22.jpg);
-    }
+    .bg-2{background-image: url(../img/fundo22.jpg); }
 
-    .bg-3{
-        background-image: url(../img/fundo33.jpg);
-    }
+    .bg-3{background-image: url(../img/fundo33.jpg); }
 
-    .bg-4{
-        background-image: url(../img/fundo44.jpg);
-    }
+    .bg-4{background-image: url(../img/fundo44.jpg); }
 
-    .bg-5{
-        background-image: url(../img/fundo55.jpg);
-    }
+    .bg-5{background-image: url(../img/fundo55.jpg); }
 
     .hero-section h1{
         font-size: 46px;  
@@ -180,36 +145,25 @@ p{
 
 }
 
+/* *************************************************************************** */
 @media (max-width: 784px){
     
-    .header .container{
-        flex-direction: column;     
-    }
+    .header .container{ flex-direction: column; }
 
-    .header .menu{
-        margin-top: 20px;
-    }
+    .header .menu{ margin-top: 20px; }
 
-    .hero-section h1{
-         font-size: 36px;  
-    }
+    .hero-section h1{font-size: 36px;  }
     
-    .social{
-        display : none;
-    }
+    .social{display : none; }
     
-    .hero-section{       
-        height: calc(100vh - 400px);/* tem que colocar espaco no - */
-    }
+    .hero-section{ height: calc(100vh - 400px); }
  
 }     
 
 /* *************************************************************************** */
 @media (max-width: 708px){
  
-    .menu input{
-        font-size: 12px;       
-    }
+    .menu input{ font-size: 12px; }
 
     .menu .btn{       
         width: 30%;         
@@ -230,12 +184,10 @@ p{
         row-gap: 20px;
     }
 
-    .footer-text{
-        text-align: center;
-    }
+    .footer-text{ text-align: center; }
 }
 
-
+/* *************************************************************************** */
 @media (max-width: 520px){
 
     .menu{
@@ -243,11 +195,7 @@ p{
         align-items: end;         
     }
 
-    .hero-section h1{     
-        font-size: 26px;  
-    }
+    .hero-section h1{font-size: 26px;  }
 
-    .text{
-        margin-right: 65%;
-    }  
+    .text{margin-right: 65%; }  
 }   
